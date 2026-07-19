@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ammasark.in/sitemap.xml

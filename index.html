@@ -1,119 +1,509 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="TKSS Chess Academy, Taanya Kaavya School of Sports, provides structured chess coaching, online chess classes, school programs, and tournament training from its main centre in Mogappair, Chennai.">
-  <meta name="keywords" content="TKSS Chess Academy, Taanya Kaavya School of Sports, chess coaching Chennai, Mogappair chess academy, online chess classes, school chess programs, FIDE certified coaches">
-  <meta name="theme-color" content="#07152D">
-  <meta property="og:title" content="TKSS Chess Academy | Building Future Chess Champions">
-  <meta property="og:description" content="Structured chess coaching for beginners, tournament players, schools, and institutions through offline and online programs.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="tkss-logo-clean.png">
-  <title>TKSS Chess Academy | Taanya Kaavya School of Sports</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="tkss-logo-clean.png">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Taanya Kaavya School of Sports - TKSS Chess Academy","email":"tkss.chess@gmail.com","telephone":"+91 95662 14256","logo":"tkss-logo-clean.png","address":{"@type":"PostalAddress","streetAddress":"C1-19, 2nd Floor, Jai Bharat Apartment, 6th Main Road, Mogappair Eri Scheme","addressLocality":"Chennai","postalCode":"600037","addressCountry":"IN"},"description":"Chess-first sports institute offering structured chess coaching, online classes, school programs, and tournament training."}</script>
-</head>
-<body>
-  <div class="scroll-progress" aria-hidden="true"></div>
-  <header class="site-header" id="home">
-    <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="TKSS home">
-        <img src="tkss-logo-clean.png" alt="TKSS Logo" width="58" height="58">
-        <span><strong>TKSS</strong><small>Taanya Kaavya School of Sports</small></span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu"><span></span><span></span><span></span></button>
-      <div class="nav-links" id="navLinks"><a class="active" href="#home">Home</a><a href="#programs">Programs</a><a href="#curriculum">Curriculum</a><a href="#school-programs">Schools</a><a href="https://app.meetchess.com" target="_blank" rel="noopener">Student Portal</a><a href="#about">About</a><a href="#contact">Contact</a></div>
-      <a class="nav-cta ripple" href="#register">Book Free Demo</a>
-    </nav>
-    <section class="hero section-shell">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">TKSS Chess Academy · Established 2008 · Mogappair, Chennai</p>
-        <h1>Building Future Chess Champions through LCD (Learner-Centred Design) Teaching Method</h1>
-        <p class="hero-text">TKSS develops confident chess players through a structured learner-centred approach that combines modern teaching methods, tournament exposure, technology, and personalized coaching for every student.</p>
-        <div class="hero-tags"><span data-lucide="check-circle"></span>Offline & Online Classes <span data-lucide="school"></span>School & Institutional Programs <span data-lucide="trophy"></span>Tournament Training <span data-lucide="badge-check"></span>Experienced Coaches</div>
-        <div class="hero-actions"><a class="button primary ripple" href="#register">Book Free Demo</a><a class="button secondary ripple" href="#programs">Explore Programs</a></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amma's Ark - TKSS | Magical Kids Activity Centre in Chennai</title>
+    <meta
+      name="description"
+      content="Amma's Ark - TKSS is a joyful activity centre in Valasaravakkam, Chennai for chess, art, dance, yoga, karate, public speaking, storytelling and calligraphy."
+    />
+    <meta name="theme-color" content="#0ea5ad" />
+    <link rel="canonical" href="https://ammasark.in/" />
+    <link rel="icon" href="assets/ammas-ark-logo-circle.png" />
+    <meta property="og:title" content="Amma's Ark - TKSS | Learn, Create, Grow" />
+    <meta property="og:description" content="A magical activity kingdom where children build confidence, creativity and discipline." />
+    <meta property="og:image" content="assets/ammas-ark-logo-circle.png" />
+    <meta property="og:url" content="https://ammasark.in/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://ammasark.in/" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Amma's Ark - TKSS",
+        "image": "assets/ammas-ark-logo-circle.png",
+        "description": "Holistic activity centre for children and adults in Chennai.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2nd Floor, No.112, Vyasar Street, Above Weekidz Play School, Kamakshi Nagar, Valasaravakkam",
+          "addressLocality": "Chennai",
+          "postalCode": "600087",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "IN"
+        },
+        "areaServed": "Chennai",
+        "url": "https://ammasark.in/",
+        "telephone": "+91 9003433304",
+        "email": "ammasarkactivitycentre@gmail.com",
+        "sameAs": [
+          "https://www.instagram.com/ammasark_/",
+          "https://share.google/AHp48FUXkemnU32PY"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#home">
+          <img src="assets/ammas-ark-logo-circle.png" alt="Amma's Ark logo" />
+          <span><strong>Amma's Ark</strong><small>TKSS Activity Kingdom</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+        <div class="menu" id="menu">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a class="programs-link" href="#activities">Programs</a>
+          <a href="#pricing">Pricing Plan</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#founder">Founder</a>
+          <a href="#team">Team</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact Us</a>
+          <a class="menu-cta" href="#trial">Book Free Demo</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="sparkles" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Chennai's Premier Activity Centre for Young Minds</p>
+            <h1>Where Every Child Discovers a New Talent</h1>
+            <p>
+              Discover a joyful learning world where children build confidence through Chess,
+              Art, Dance, Yoga, Karate, Public Speaking, Storytelling and Calligraphy.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#trial">Book Free Demo</a>
+              <a class="btn ghost" href="#activities">Watch Our Classes</a>
+            </div>
+            <div class="mini-stats" aria-label="Program highlights">
+              <span>Ages 3–16</span>
+              <span>Small batches</span>
+              <span>Online &amp; offline</span>
+            </div>
+          </div>
+
+          <div class="hero-stage" aria-label="Amma's Ark magical mascot world">
+            <div class="hero-icon-world">
+              <span class="orbit-path path-one" aria-hidden="true"></span>
+              <span class="orbit-path path-two" aria-hidden="true"></span>
+              <div class="logo-orbit"><img src="assets/ammas-ark-logo-circle.png" alt="Amma's Ark logo" /></div>
+              <img class="world-mascot chess" src="assets/chess-bunny.png" alt="Chess Bunny mascot" />
+              <img class="world-mascot art" src="assets/artist-fox.png" alt="Artist Fox mascot" />
+              <img class="world-mascot yoga" src="assets/yoga-panda.png" alt="Yoga Panda mascot" />
+              <img class="world-mascot dance" src="assets/dance-unicorn.png" alt="Dance Unicorn mascot" />
+              <img class="world-mascot karate" src="assets/karate-tiger.png" alt="Karate Tiger mascot" />
+              <img class="world-mascot speak" src="assets/speaker-lion.png" alt="Speaker Lion mascot" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Why parents choose Amma's Ark">
+        <div class="container trust-grid">
+          <span>✓ Safe Learning Environment</span><span>✓ Experienced Coaches</span><span>✓ Small Batch Learning</span><span>✓ Activity-Based Learning</span><span>✓ Parent Progress Updates</span>
+        </div>
+      </section>
+
+      <section class="stats-section" aria-label="Amma's Ark highlights">
+        <div class="container stats-grid">
+          <div><strong>1000+</strong><span>Happy Students</span></div>
+          <div><strong>8</strong><span>Premium Programs</span></div>
+          <div><strong>50+</strong><span>School Partnerships</span></div>
+          <div><strong>4.9★</strong><span>Parent Rating</span></div>
+        </div>
+      </section>
+
+      <section class="kingdom" id="about">
+        <div class="container kingdom-grid">
+          <div>
+            <p class="eyebrow">About Amma's Ark</p>
+            <h2>Welcome to Amma's Ark</h2>
+            <p class="welcome-copy">A Place to Learn, Explore and Grow. Amma's Ark is a modern activity centre where children develop confidence, creativity and life skills through engaging experiences that inspire lifelong learning.</p>
+            <p class="welcome-copy">Today, our centre offers thoughtfully designed programs in chess, art, dance, yoga, karate, public speaking, storytelling and calligraphy. As Amma's Ark continues to grow, our vision is to introduce more indoor and outdoor activities, sports, creative programs and enrichment experiences that help every child discover their full potential.</p>
+            <a class="btn primary welcome-cta" href="#activities">Explore Our Programs</a>
+            <p class="legacy-about">
+              Each program gets its own friendly mascot, tiny motion, soft colours and a
+              clear learning promise. The website now feels closer to a children’s
+              activity universe than a regular institute page.
+            </p>
+          </div>
+          <div class="sticker-board icon-showcase" aria-label="Activity icon showcase">
+            <div class="showcase-icon chess"><span>CH</span><strong>Chess</strong></div>
+            <div class="showcase-icon art"><span>ART</span><strong>Art</strong></div>
+            <div class="showcase-icon yoga"><span>OM</span><strong>Yoga</strong></div>
+            <div class="showcase-icon dance"><span>DA</span><strong>Dance</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="activities" id="activities">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Programs</p>
+            <h2>Choose an activity. Build a real skill.</h2>
+          </div>
+          <div class="activity-grid">
+            <article class="activity-card chess-card">
+              <div class="activity-icon chess"><img src="assets/chess-bunny.png" alt="Chess Bunny mascot" /></div>
+              <h3>Chess</h3>
+              <p>Strategy, focus and decision-making with an original chess kingdom guide.</p>
+              <b>Ages 6-16</b>
+            </article>
+            <article class="activity-card art-card">
+              <div class="activity-icon art"><img src="assets/artist-fox.png" alt="Artist Fox mascot" /></div>
+              <h3>Art, Drawing & Painting</h3>
+              <p>Colours, imagination and confident creative expression.</p>
+              <b>Ages 3-16</b>
+            </article>
+            <article class="activity-card yoga-card">
+              <div class="activity-icon yoga"><img src="assets/yoga-panda.png" alt="Yoga Panda mascot" /></div>
+              <h3>Yoga</h3>
+              <p>Calm, balance, flexibility and mindful body awareness.</p>
+              <b>Kids & Adults</b>
+            </article>
+            <article class="activity-card calligraphy-card">
+              <div class="activity-icon calligraphy"><img src="assets/calligraphy-koala.png" alt="Calligraphy Koala mascot" /></div>
+              <h3>Calligraphy</h3>
+              <p>Beautiful writing, patience, fine motor skill and elegant presentation.</p>
+              <b>Ages 8-16</b>
+            </article>
+            <article class="activity-card dance-card">
+              <div class="activity-icon dance"><img src="assets/dance-unicorn.png" alt="Dance Unicorn mascot" /></div>
+              <h3>Dance & Western Dance</h3>
+              <p>Rhythm, confidence, stage presence and joyful movement.</p>
+              <b>Ages 4-16</b>
+            </article>
+            <article class="activity-card karate-card">
+              <div class="activity-icon karate"><img src="assets/karate-tiger.png" alt="Karate Tiger mascot" /></div>
+              <h3>Karate</h3>
+              <p>Discipline, strength, respect, coordination and courage.</p>
+              <b>Ages 5-16</b>
+            </article>
+            <article class="activity-card speaking-card">
+              <div class="activity-icon speaking"><img src="assets/speaker-lion.png" alt="Speaker Lion mascot" /></div>
+              <h3>Public Speaking</h3>
+              <p>Voice, posture, clarity and confidence in front of people.</p>
+              <b>Ages 7-16</b>
+            </article>
+            <article class="activity-card story-card">
+              <div class="activity-icon story"><img src="assets/story-bird.png" alt="Story Bird mascot" /></div>
+              <h3>Storytelling</h3>
+              <p>Language, imagination, memory and expressive narration.</p>
+              <b>Ages 4-12</b>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="chess-feature" id="chess">
+        <div class="container chess-grid">
+          <div class="piece-gallery chess-icon-feature" aria-hidden="true">
+            <div class="chess-board-icon">
+              <span>K</span><span>N</span><span>R</span><span>P</span>
+            </div>
+          </div>
+          <div>
+            <p class="eyebrow">Featured kingdom</p>
+            <h2>Chess becomes a story children want to enter.</h2>
+            <p>
+              Instead of teaching chess as only rules and moves, Amma’s Ark can present it
+              as a world of queens, knights, rooks, focus, patience and brave thinking.
+            </p>
+            <ul class="outcome-list">
+              <li>Focus and patience</li>
+              <li>Problem solving</li>
+              <li>Memory and planning</li>
+              <li>Confidence after every move</li>
+            </ul>
+            <a class="btn primary" href="#trial">Try a Chess Class</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="why" id="why">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Why choose us</p>
+            <h2>Premium care without losing the joy of childhood.</h2>
+          </div>
+          <div class="parents-grid">
+            <article><h3>Safe environment</h3><p>Children learn in a warm, supervised and welcoming space.</p></article>
+            <article><h3>Small batches</h3><p>Every child gets individual attention and steady encouragement.</p></article>
+            <article><h3>Activity-based learning</h3><p>Children learn through practice, play, performance and reflection.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="outcomes" id="outcomes">
+        <div class="container outcomes-grid">
+          <div>
+            <p class="eyebrow">Learning outcomes</p>
+            <h2>We sell transformation, not just activities.</h2>
+          </div>
+          <div class="outcome-cloud">
+            <span>Confidence</span><span>Creativity</span><span>Communication</span>
+            <span>Critical Thinking</span><span>Leadership</span><span>Discipline</span>
+            <span>Problem Solving</span><span>Social Skills</span><span>Physical Fitness</span>
+            <span>Emotional Intelligence</span><span>Teamwork</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="ages growth-journey" id="ages">
+        <div class="container">
+          <div class="section-heading growth-heading">
+            <p class="eyebrow">Your child grows with us</p>
+            <h2>Every Stage. Every Milestone. Every Child.</h2>
+            <p>From a child's first creative spark to becoming a confident young leader, Amma's Ark offers age-appropriate experiences that inspire curiosity, build character and unlock lifelong potential.</p>
+          </div>
+          <div class="growth-grid">
+            <article>
+              <span class="stage-icon">&#127804;</span><p class="stage-age">3–5 Years</p><h3>Tiny Explorers</h3>
+              <p>The perfect beginning for little learners. Through play, movement, stories and creative expression, children build confidence, curiosity and essential early developmental skills.</p>
+              <h4>Focus Areas</h4><ul><li>Curiosity &amp; Imagination</li><li>Social Skills</li><li>Motor Development</li><li>Early Communication</li><li>Creative Expression</li></ul>
+            </article>
+            <article>
+              <span class="stage-icon">&#128640;</span><p class="stage-age">6–9 Years</p><h3>Curious Minds</h3>
+              <p>A wonderful stage to discover passions and build strong foundations through engaging, hands-on learning.</p>
+              <h4>Focus Areas</h4><ul><li>Problem Solving</li><li>Creativity</li><li>Coordination</li><li>Confidence</li><li>Teamwork</li></ul>
+            </article>
+            <article>
+              <span class="stage-icon">&#11088;</span><p class="stage-age">10–13 Years</p><h3>Rising Achievers</h3>
+              <p>Structured programs help children strengthen communication, leadership, discipline and critical thinking for greater challenges.</p>
+              <h4>Focus Areas</h4><ul><li>Leadership</li><li>Communication</li><li>Strategic Thinking</li><li>Self-Discipline</li><li>Creative Excellence</li></ul>
+            </article>
+            <article>
+              <span class="stage-icon">&#128081;</span><p class="stage-age">14–16 Years</p><h3>Future Leaders</h3>
+              <p>Children gain confidence to perform, lead, compete and express themselves with purpose.</p>
+              <h4>Focus Areas</h4><ul><li>Leadership</li><li>Decision Making</li><li>Public Speaking</li><li>Performance</li><li>Competitive Excellence</li><li>Real-World Skills</li></ul>
+            </article>
+          </div>
+          <div class="growth-promise"><span>&#10024;</span><div><h3>Our Promise</h3><p>Every child grows at their own pace. Our trainers recommend programs based on age, interests, experience and individual readiness—so every learner receives the right guidance at the right time.</p></div></div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Pricing plan</p>
+            <h2>Flexible plans shared after a quick enquiry.</h2>
+          </div>
+          <div class="pricing-grid">
+            <article>
+              <span>Starter</span>
+              <h3>Single Activity</h3>
+              <p>Best for families who want to begin with one focused program.</p>
+              <a class="btn ghost" href="#trial">Enquire Now</a>
+            </article>
+            <article class="featured-plan">
+              <span>Popular</span>
+              <h3>Multi-Activity</h3>
+              <p>Combine creative, fitness, communication and focus-based programs.</p>
+              <a class="btn primary" href="#trial">Book Free Demo</a>
+            </article>
+            <article>
+              <span>Events</span>
+              <h3>Workshops</h3>
+              <p>Seasonal camps, holiday workshops and special creative sessions.</p>
+              <a class="btn ghost" href="#contact">Ask Timings</a>
+            </article>
+          </div>
+          <p class="pricing-note">Fees and batch timings vary by activity, age group and schedule. Contact us for the current plan.</p>
+        </div>
+      </section>
+
+      <section class="workshops" id="workshops">
+        <div class="container workshop-panel">
+          <div>
+            <p class="eyebrow">Workshops</p>
+            <h2>Holiday workshops, creative events and special learning days.</h2>
+            <p>Art workshops, storytelling circles, theatre activities, chess camps and celebration events can all live here as Amma’s Ark grows.</p>
+          </div>
+          <a class="btn primary" href="#trial">Ask About Workshops</a>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Gallery</p>
+            <h2>A glimpse into the Amma's Ark learning world.</h2>
+          </div>
+          <div class="gallery-grid">
+            <button type="button"><div class="gallery-icon chess">CH</div><span>Chess Adventure</span></button>
+            <button type="button"><div class="gallery-icon art">ART</div><span>Colour Studio</span></button>
+            <button type="button"><div class="gallery-icon dance">DA</div><span>Dance Stage</span></button>
+            <button type="button"><div class="gallery-icon yoga">OM</div><span>Activity Kingdom</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Our promise</p>
+            <h2>Thoughtful learning for confident, happy children.</h2>
+          </div>
+          <div class="parents-grid">
+            <article><h3>Encouraging mentors</h3><p>Children are guided with patience, positive feedback and clear goals.</p></article>
+            <article><h3>Room to belong</h3><p>Every child gets space to explore at their own pace and celebrate progress.</p></article>
+            <article><h3>Skills for life</h3><p>Our activities nurture creativity, confidence, focus, communication and resilience.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container faq-grid">
+          <div>
+            <p class="eyebrow">FAQ</p>
+            <h2>Quick answers for parents.</h2>
+          </div>
+          <div class="faq-list">
+            <details open><summary>Can we book a free demo?</summary><p>Yes. Submit the form or WhatsApp the centre to request a suitable trial slot.</p></details>
+            <details><summary>What is the minimum age?</summary><p>Programs begin from age 3, depending on the activity and child readiness.</p></details>
+            <details><summary>Can my child join multiple activities?</summary><p>Yes. Many families combine creative, fitness, communication and focus-based programs.</p></details>
+            <details><summary>How do we know fees and timings?</summary><p>Fees and batch timings can be shared directly over call or WhatsApp.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="journey">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Learning journey</p>
+            <h2>Every class builds a child from inside out.</h2>
+          </div>
+          <div class="journey-line">
+            <article><span>1</span><h3>Explore</h3><p>Children try new skills in a warm, safe space.</p></article>
+            <article><span>2</span><h3>Express</h3><p>They speak, draw, move, perform and participate.</p></article>
+            <article><span>3</span><h3>Evolve</h3><p>Confidence, discipline and creativity become visible.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="founder" id="founder">
+        <div class="container founder-card">
+          <div class="founder-portrait">KS</div>
+          <div>
+            <p class="eyebrow">Meet our founder</p>
+            <h2>Ms. Kavya S.</h2>
+            <p class="role">Founder</p>
+            <p>
+              Amma’s Ark is shaped by the belief that children grow best when learning is
+              joyful, structured and emotionally safe. The vision is to create a trusted
+              activity centre where every child feels seen, encouraged and excited to learn.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="team" id="team">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Team</p>
+            <h2>Passionate trainers who make learning safe and exciting.</h2>
+          </div>
+          <div class="team-grid">
+            <article><span>CH</span><h3>Chess Trainer</h3><p>Focus, strategy and problem-solving guidance.</p></article>
+            <article><span>ART</span><h3>Creative Arts Trainer</h3><p>Drawing, colour, imagination and presentation.</p></article>
+            <article><span>FIT</span><h3>Movement Trainer</h3><p>Dance, karate, yoga and body confidence.</p></article>
+            <article><span>SP</span><h3>Communication Trainer</h3><p>Public speaking, storytelling and expressive confidence.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="parents">
+        <div class="container parents-grid">
+          <article><h3>Small batches</h3><p>So every child gets attention and encouragement.</p></article>
+          <article><h3>Premium experience</h3><p>Warm visuals, thoughtful classes and a trusted parent journey.</p></article>
+          <article><h3>Holistic growth</h3><p>Confidence, creativity, communication, fitness and focus together.</p></article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Visit Amma's Ark</p>
+            <h2>Come meet the activity kingdom in person.</h2>
+            <address>
+              2nd Floor, No.112, Vyasar Street,<br />
+              Above Weekidz Play School, Kamakshi Nagar,<br />
+              Valasaravakkam, Chennai - 600087,<br />
+              Tamil Nadu, India.
+            </address>
+            <div class="contact-list" aria-label="Contact details">
+              <p><strong>Phone / WhatsApp:</strong> 9003433304</p>
+              <p><strong>Email:</strong> ammasarkactivitycentre@gmail.com</p>
+              <p><strong>Instagram:</strong> @ammasark_</p>
+              <p><strong>Google Business:</strong> Amma's Ark - TKSS</p>
+            </div>
+            <div class="contact-actions">
+              <a class="btn primary" href="tel:+919003433304">Call Centre</a>
+              <a class="btn ghost" href="https://wa.me/919003433304" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a class="btn ghost" href="mailto:ammasarkactivitycentre@gmail.com">Email</a>
+              <a class="btn ghost" href="https://www.instagram.com/ammasark_/" target="_blank" rel="noreferrer">Instagram</a>
+              <a class="btn ghost" href="https://share.google/AHp48FUXkemnU32PY" target="_blank" rel="noreferrer">Google Profile</a>
+            </div>
+          </div>
+          <form class="trial-form" id="trial">
+            <h2>Book a Free Demo</h2>
+            <label>Parent Name<input name="name" autocomplete="name" required /></label>
+            <label>Phone Number<input name="phone" inputmode="tel" autocomplete="tel" required /></label>
+            <label>Child Age<input name="age" inputmode="numeric" /></label>
+            <label>Activity
+              <select name="activity">
+                <option>Chess</option>
+                <option>Art, Drawing & Painting</option>
+                <option>Yoga</option>
+                <option>Calligraphy</option>
+                <option>Dance / Western Dance</option>
+                <option>Karate</option>
+                <option>Public Speaking</option>
+                <option>Storytelling</option>
+              </select>
+            </label>
+            <button class="btn primary" type="submit">Send Enquiry</button>
+            <p>This opens WhatsApp with the enquiry details.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <img src="assets/ammas-ark-logo-circle.png" alt="Amma's Ark logo" />
+          <p>Amma's Ark - TKSS<br />Learn - Create - Grow</p>
+        </div>
+        <a href="#activities">Activities</a>
+        <a href="#trial">Book Free Demo</a>
+        <a href="https://wa.me/919003433304" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a href="mailto:ammasarkactivitycentre@gmail.com">Email</a>
+        <a href="https://www.instagram.com/ammasark_/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://share.google/AHp48FUXkemnU32PY" target="_blank" rel="noreferrer">Google Business</a>
       </div>
-      <div class="hero-visual reveal"><div class="visual-card"><img src="tkss-logo-clean.png" alt="TKSS circular logo" loading="eager"><div class="chess-piece">♛</div></div></div>
-    </section>
-    <section class="stats section-shell" aria-label="TKSS highlights">
-      <article class="glass-card"><span>Students Trained</span><strong><b data-counter="8000">0</b>+</strong></article>
-      <article class="glass-card"><span>Years of Excellence</span><strong><b data-counter="18">0</b>+</strong></article>
-      <article class="glass-card"><span>Coaches</span><strong>FIDE Rated & Certified</strong></article>
-      <article class="glass-card"><span>School & Institutional Programs</span><strong><b data-counter="100">0</b>+</strong></article>
-    </section>
-  </header>
-  <main>
-    <section class="section-shell why" id="why"><div class="section-heading reveal"><p class="eyebrow">Why TKSS</p><h2>A structured, student-centred approach to developing confident learners and competitive chess players.</h2></div><div class="why-grid">
-      <article class="premium-card reveal"><span data-lucide="route"></span><h3>Structured Curriculum</h3><p>Progress through a carefully designed, level-based curriculum that guides students from their first move to advanced tournament preparation.</p></article>
-      <article class="premium-card reveal"><span data-lucide="user-check"></span><h3>Experienced Coaches</h3><p>Learn from experienced coaches, including FIDE-rated players and coaches who have completed FIDE Instructor and FIDE Arbiter certification courses.</p></article>
-      <article class="premium-card reveal"><span data-lucide="trophy"></span><h3>Tournament Preparation</h3><p>Build confidence through clock handling, notation, game analysis, tournament etiquette, rating guidance, and competitive mindset training.</p></article>
-      <article class="premium-card reveal"><span data-lucide="user-round"></span><h3>Individual Attention</h3><p>Benefit from small-batch coaching, personalised feedback, regular progress reviews, and individual guidance to support continuous improvement.</p></article>
-      <article class="premium-card reveal"><span data-lucide="school"></span><h3>School & Institutional Programs</h3><p>Comprehensive chess programs for schools, preschools, academies, daycare centres, tuition centres, and other educational institutions.</p></article>
-      <article class="premium-card reveal"><span data-lucide="globe-2"></span><h3>Online Learning</h3><p>Join live interactive chess classes from anywhere in the world, with students from India, USA, UK, Singapore, Malaysia, Australia, and more.</p></article>
-    </div></section>
+      <p class="copyright">Copyright 2026 Amma's Ark - TKSS</p>
+    </footer>
 
-    <section class="section-shell method" id="method"><div class="section-heading reveal"><p class="eyebrow">LCD Method</p><h2>Why the TKSS Learning Method Works</h2></div><div class="why-grid"><article class="premium-card reveal"><span data-lucide="book-open"></span><h3>Learn</h3><p>Students understand concepts instead of memorizing moves.</p></article><article class="premium-card reveal"><span data-lucide="puzzle"></span><h3>Practice</h3><p>Interactive exercises, puzzles, assignments, and guided games.</p></article><article class="premium-card reveal"><span data-lucide="trophy"></span><h3>Compete</h3><p>Regular internal, school, district, state, national, and FIDE-rated tournaments.</p></article><article class="premium-card reveal"><span data-lucide="trending-up"></span><h3>Improve</h3><p>Continuous assessment, personalized feedback, and structured progression.</p></article></div></section>
+    <div class="sticky-actions" aria-label="Quick actions">
+      <a href="#trial">Trial</a>
+      <a href="https://wa.me/919003433304" target="_blank" rel="noreferrer">WA</a>
+      <a href="tel:+919003433304">Call</a>
+    </div>
 
-    <section class="journey" id="journey"><div class="section-shell"><div class="section-heading reveal"><p class="eyebrow">Student Learning Journey</p><h2>A clear, structured pathway that supports every student from their first lesson to competitive tournament chess.</h2></div><div class="timeline">
-      <article class="reveal"><span>01</span><strong>Free Demo Class</strong><p>Experience our teaching approach and interact with our coaches.</p></article>
-      <article class="reveal"><span>02</span><strong>Skill Assessment</strong><p>Evaluate the student's age, playing level, goals, and experience.</p></article>
-      <article class="reveal"><span>03</span><strong>Batch Allocation</strong><p>Place students in the most suitable batch based on skill level and schedule.</p></article>
-      <article class="reveal"><span>04</span><strong>Structured Curriculum</strong><p>Follow a progressive learning plan with clear objectives and milestones.</p></article>
-      <article class="reveal"><span>05</span><strong>Practice & Assignments</strong><p>Reinforce learning through guided practice, worksheets, homework, and game reviews.</p></article>
-      <article class="reveal"><span>06</span><strong>Regular Progress Reviews</strong><p>Monitor development through assessments, coach feedback, and parent updates.</p></article>
-      <article class="reveal"><span>07</span><strong>Tournament Participation</strong><p>Prepare for internal, school, district, state, national, and FIDE-rated tournaments.</p></article>
-      <article class="reveal"><span>08</span><strong>Advanced Training</strong><p>Receive personalised coaching for openings, planning, analysis, and rating improvement.</p></article>
-    </div></div></section>
-
-    <section class="section-shell split about" id="about"><div class="reveal"><p class="eyebrow">About TKSS</p><h2>A Chess-First Sports Institute with a Vision for the Future</h2><p><strong>Taanya Kaavya School of Sports (TKSS)</strong> is a chess-focused sports institute committed to developing young minds through structured, high-quality chess education. While chess is our primary focus today, our long-term vision is to grow into a multidisciplinary sports institute, offering opportunities for students to excel across various sports and skill-development programs.</p><p>Operating through our main centre in <strong>Mogappair</strong> and partner programs across <strong>Chennai</strong>, TKSS provides a supportive learning environment where every student is encouraged to think, learn, and grow with confidence.</p><p>At TKSS, we believe chess is more than a game. It is a powerful tool for developing focus, critical thinking, decision-making, patience, discipline, and resilience. Our coaching philosophy is student-centred, emphasizing individual growth, structured learning pathways, regular progress reviews, and long-term skill development rather than short-term results.</p><p>TKSS is proud to have trained students from India and internationally, including students in the <strong>United States</strong> who have successfully earned both <strong>US Chess ratings</strong> and <strong>FIDE ratings</strong>.</p><p><strong>TKSS - Rise to New Era.</strong></p></div><aside class="profile-note reveal"><img src="tkss-logo-clean.png" alt="TKSS Logo" loading="lazy"><div><h3>TKSS Main Centre</h3><p>Our flagship chess training centre in Mogappair, Chennai.</p></div></aside></section>
-
-    <section class="section-shell" id="programs"><div class="section-heading reveal"><p class="eyebrow">Programs</p><h2>Structured learning pathways - from your first move to competitive tournament play.</h2></div><div class="program-grid">
-      <article class="program-card reveal"><span data-lucide="sparkles"></span><h3>Absolute Beginner</h3><p class="meta">45 Minutes · First-Time Learners</p><p>Perfect for children who are new to chess. Learn the chessboard, piece movement, capturing, check, checkmate, basic rules, and enjoy engaging chess activities that make learning fun.</p><a href="#register">Book Demo</a></article>
-      <article class="program-card reveal"><span data-lucide="brain"></span><h3>Beginner</h3><p class="meta">45 Minutes</p><p>Build a strong foundation through opening principles, basic tactical ideas, piece coordination, simple endgames, guided practice games, and regular assignments.</p><a href="#register">Book Demo</a></article>
-      <article class="program-card reveal"><span data-lucide="badge-plus"></span><h3>Advanced Beginner</h3><p class="meta">60 Minutes</p><p>Develop tactical awareness with checkmate patterns, tactical motifs, opening systems, endgame fundamentals, tournament rules, game analysis, and structured practice.</p><a href="#register">Book Demo</a></article>
-      <article class="program-card reveal"><span data-lucide="timer"></span><h3>Intermediate</h3><p class="meta">2-3 Hours · Training · Practice · Analysis</p><p>Designed for tournament players looking to improve through positional understanding, tactical calculation, opening repertoire development, middlegame planning, endgame technique, homework, game analysis, and tournament preparation.</p><a href="#register">Book Demo</a></article>
-      <article class="program-card reveal"><span data-lucide="crown"></span><h3>Advanced</h3><p class="meta">Personalised Training Programme</p><p>Individual coaching tailored to each student's age, playing strength, tournament goals, rating, learning pace, and detailed game analysis to maximise improvement.</p><a href="#register">Book Demo</a></article>
-      <article class="program-card reveal"><span data-lucide="globe-2"></span><h3>Online Chess Classes</h3><p class="meta">Live · Flexible · International</p><p>Interactive online coaching for students across India and around the world, including the USA, UK, Singapore, Malaysia, Australia, and more. Training includes structured curriculum, tournament preparation, and guidance towards US Chess and FIDE ratings.</p><a href="#register">Enquire Now</a></article>
-    </div></section>
-
-    <section class="curriculum" id="curriculum"><div class="section-shell"><div class="section-heading reveal"><p class="eyebrow">Curriculum Roadmap</p><h2>Every stage has clear objectives, measurable skills, defined outcomes, and structured practice.</h2></div><div class="roadmap">
-      <article class="reveal"><h3>Absolute Beginner</h3><p><strong>Objective:</strong> Build confidence with the chessboard and basic rules.</p><p><strong>Skills:</strong> Piece movement, capturing, check, checkmate, and simple game play.</p><p><strong>Outcome:</strong> Play complete games independently while understanding the fundamental rules of chess.</p><small>Books · Worksheets · Fun Activities · Practice Assignments</small></article>
-      <article class="reveal"><h3>Beginner</h3><p><strong>Objective:</strong> Develop strong chess fundamentals.</p><p><strong>Skills:</strong> Opening principles, basic tactics, piece coordination, simple endgames, and notation.</p><p><strong>Outcome:</strong> Play stronger practice games with improved tactical awareness and confidence.</p><small>Worksheets · Assignments · Guided Practice Games · Review Sessions</small></article>
-      <article class="reveal"><h3>Advanced Beginner</h3><p><strong>Objective:</strong> Prepare for competitive chess.</p><p><strong>Skills:</strong> Tactical patterns, checkmate themes, opening systems, endgame fundamentals, tournament rules, and game analysis.</p><p><strong>Outcome:</strong> Participate confidently in tournaments with a solid understanding of competitive play.</p><small>Recommended Books · Analysis Exercises · Tournament Practice</small></article>
-      <article class="reveal"><h3>Intermediate</h3><p><strong>Objective:</strong> Strengthen strategic understanding and competitive performance.</p><p><strong>Skills:</strong> Positional planning, tactical calculation, opening repertoire development, middlegame strategy, and endgame technique.</p><p><strong>Outcome:</strong> Consistently perform at a higher level in tournaments through deeper game understanding.</p><small>Homework · Model Games · Endgame Drills · Tournament Analysis</small></article>
-      <article class="reveal"><h3>Advanced</h3><p><strong>Objective:</strong> Maximise individual performance through personalised coaching.</p><p><strong>Skills:</strong> Advanced opening preparation, engine-assisted analysis, tournament planning, psychological preparation, and performance optimisation.</p><p><strong>Outcome:</strong> Achieve long-term rating improvement and compete confidently at higher levels.</p><small>Personalised Curriculum · Performance Reviews · Individual Training Plans · Tournament Preparation</small></article>
-    </div></div></section>
-
-    <section class="school-programs" id="school-programs"><div class="section-shell split"><div class="reveal"><p class="eyebrow">ECA Chess Programme</p><h2>Complete ECA Chess Solutions for Schools</h2><p>TKSS partners with schools, preschools, academies, and educational institutions to provide structured ECA Chess Programmes that develop concentration, logical thinking, confidence, creativity, and decision-making skills. We manage everything from curriculum planning to tournament execution.</p><div class="hero-actions"><a class="button primary ripple" href="#contact">Partner With TKSS</a><a class="button secondary ripple" href="#branches">View Locations</a></div></div><div class="school-list reveal"><h3>Our School Services</h3><article><span data-lucide="school"></span><strong>ECA Chess Programmes</strong></article><article><span data-lucide="book-open-check"></span><strong>Structured Chess Curriculum</strong></article><article><span data-lucide="presentation"></span><strong>Teacher Training & Support</strong></article><article><span data-lucide="clipboard-check"></span><strong>Student Assessment & Progress Reports</strong></article><article><span data-lucide="swords"></span><strong>Intra-School Chess Competitions</strong></article><article><span data-lucide="trophy"></span><strong>Inter-School Chess Tournament Management</strong></article><article><span data-lucide="calendar-star"></span><strong>Chess Day & Special Events</strong></article><article><span data-lucide="badge-check"></span><strong>FIDE Rating Guidance</strong></article></div></div></section>
-
-    <section class="section-shell" id="coaches"><div class="section-heading reveal"><p class="eyebrow">Team</p><h2>Experienced FIDE-certified coaching and leadership team.</h2></div><div class="coach-grid team-grid"><article class="coach-card reveal"><div class="coach-photo"><img src="tkss-logo-clean.png" alt="TKSS founder profile placeholder" loading="lazy"></div><div><p class="coach-title">Founder & Mentor</p><h3>Mr. Senthil Kumar M.R.</h3><p><strong>Professional Credentials</strong></p><ul><li>International Arbiter (2022) - FIDE Licensed</li><li>FIDE Arbiter (2009)</li><li>Developmental Instructor (2013)</li></ul><p>Mr. Senthil Kumar is an experienced chess professional and FIDE-certified International Arbiter with extensive expertise in tournament organization and player development. He has played a key role in conducting professional chess tournaments and building structured training systems for students.</p></div></article><article class="coach-card reveal"><div class="coach-photo"><img src="tkss-logo-clean.png" alt="TKSS head coach profile placeholder" loading="lazy"></div><div><p class="coach-title">Head Coach</p><h3>Kavya S</h3><p><strong>Achievements</strong></p><ul><li>National School Team Gold Medalist</li><li>National School Team Silver Medalist</li><li>18+ Years Playing Experience</li><li>12+ Years Coaching Experience</li></ul><p><strong>Professional Credentials</strong></p><ul><li>FIDE Arbiter (2023)</li><li>National Arbiter</li><li>National Instructor (Licensed 2024-2027)</li></ul><p>Kavya specializes in structured learner-centred coaching and has helped numerous students become confident tournament players through systematic training.</p></div></article><article class="coach-card reveal"><div class="coach-photo"><img src="tkss-logo-clean.png" alt="TKSS assistant coach profile placeholder" loading="lazy"></div><div><p class="coach-title">Assistant Coach & Secretary</p><h3>Taanya S S</h3><p><strong>Achievements</strong></p><ul><li>National School Team Silver Medalist</li><li>19+ Years Playing Experience</li><li>2+ Years Coaching Experience</li></ul><p>Taanya S S contributes to coaching, curriculum planning, administration, and student development while ensuring a structured and engaging learning experience.</p></div></article></div></section>
-
-    <section class="achievements" id="achievements"><div class="section-shell"><div class="section-heading reveal"><p class="eyebrow">Achievements</p><h2>Progress that parents can see and students can feel.</h2></div><div class="counter-grid"><article><strong><b data-counter="1000">0</b>+</strong><span>Students Trained</span></article><article><strong><b data-counter="500">0</b>+</strong><span>Tournament Medals</span></article><article><strong><b data-counter="8">0</b>+</strong><span>School Partnerships</span></article><article><strong><b data-counter="16">0</b>+</strong><span>Years of Coaching</span></article><article><strong><b data-counter="40">0</b>+</strong><span>Camps Conducted</span></article><article><strong><b data-counter="250">0</b>+</strong><span>Tournament Participation</span></article></div></div></section>
-
-    <section class="section-shell locations" id="branches"><div class="section-heading reveal"><p class="eyebrow">Branches & Partner Locations</p><h2>TKSS main centre and institutional partnerships.</h2><p>TKSS operates through its main centre and multiple school, ECA, preschool, academy, and playschool partnerships.</p></div><div class="location-grid"><article class="reveal"><span data-lucide="home"></span><h3>TKSS Main Centre</h3><p>Mogappair</p><a href="https://maps.app.goo.gl/RX3kyyGhJ66GXQYr8">Directions</a></article><article class="reveal"><span data-lucide="clock"></span><h3>After School Programme</h3><p>Besant Nagar</p><a href="#contact">Contact</a></article><article class="reveal"><span data-lucide="school"></span><h3>ECA Chess Programme</h3><p>Perumbakkam</p><a href="#contact">Contact</a></article><article class="reveal"><span data-lucide="blocks"></span><h3>Partnership with Learning Tree Preschool</h3><p>Mogappair</p><a href="#contact">Contact</a></article><article class="reveal"><span data-lucide="book-open-check"></span><h3>Partnership with Curious Cubs</h3><p>Nolambur</p><a href="#contact">Contact</a></article><article class="reveal"><span data-lucide="map-pin"></span><h3>Partnership with Amma's Ark</h3><p>Valasaravakkam</p><a href="#contact">Contact</a></article><article class="reveal"><span data-lucide="map-pin"></span><h3>Partnership with Amma's Ark</h3><p>Virugambakkam</p><a href="#contact">Contact</a></article><article class="reveal"><span data-lucide="landmark"></span><h3>Partnership with Slates Academy</h3><p>Kolathur</p><a href="#contact">Contact</a></article><article class="reveal"><span data-lucide="toy-brick"></span><h3>Partnership with Podar Jumbo Playschool</h3><p>Porur</p><a href="#contact">Contact</a></article><article class="reveal"><span data-lucide="toy-brick"></span><h3>Partnership with Playschool</h3><p>Vyasarpadi</p><a href="#contact">Contact</a></article><article class="reveal"><span data-lucide="toy-brick"></span><h3>Partnership with Playschool</h3><p>Sowcarpet</p><a href="#contact">Contact</a></article></div></section>
-
-    <section class="section-shell" id="gallery"><div class="section-heading reveal"><p class="eyebrow">Gallery</p><h2>Training moments, tournaments, camps, prize distribution, school programs, and workshops.</h2></div><div class="gallery-filters"><button class="active" data-filter="all">All</button><button data-filter="classes">Classes</button><button data-filter="tournaments">Tournaments</button><button data-filter="camps">Summer Camps</button><button data-filter="school">School Programs</button><button data-filter="workshops">Workshops</button></div><div class="gallery-grid"><button class="gallery-item tall" data-category="classes" data-title="Classroom Training"><span>♟</span></button><button class="gallery-item" data-category="tournaments" data-title="Tournament Rounds"><span>♔</span></button><button class="gallery-item wide" data-category="tournaments" data-title="Prize Distribution"><span>♞</span></button><button class="gallery-item" data-category="camps" data-title="Summer Camps"><span>♜</span></button><button class="gallery-item" data-category="school" data-title="School Programs"><span>♕</span></button><button class="gallery-item" data-category="workshops" data-title="Workshops"><span>♚</span></button></div></section>
-
-    <section class="testimonials"><div class="section-shell"><div class="section-heading reveal"><p class="eyebrow">Testimonials</p><h2>Trusted by parents and young chess learners.</h2></div><div class="testimonial-card reveal"><div class="stars">★★★★★</div><p id="testimonialText">TKSS gave my child a disciplined and friendly chess environment. The coaching is structured, and tournament confidence improved steadily.</p><div class="testimonial-person"><span id="testimonialAvatar">A</span><div><strong id="testimonialName">Anitha R.</strong><small>Parent of TKSS student</small></div></div><div class="dots"><button class="active" data-slide="0"></button><button data-slide="1"></button><button data-slide="2"></button></div></div></div></section>
-
-    <section class="section-shell faq" id="faq"><div class="section-heading reveal"><p class="eyebrow">FAQ</p><h2>Questions parents usually ask before joining.</h2></div><div class="faq-list"><details class="reveal"><summary>Can absolute beginners join?</summary><p>Yes. TKSS has an Absolute Beginner program for first-time learners.</p></details><details class="reveal"><summary>What age can start chess?</summary><p>Children from around age 5 can begin, depending on attention span and interest.</p></details><details class="reveal"><summary>Do you offer online classes?</summary><p>Yes. Online classes are available for India, USA, UK, Singapore, Malaysia, Australia, and other countries.</p></details><details class="reveal"><summary>Are offline classes available?</summary><p>Yes. Offline training is available at the TKSS main centre and selected partner locations.</p></details><details class="reveal"><summary>What are the batch timings?</summary><p>Classes are conducted on weekdays and weekends according to batch schedules.</p></details><details class="reveal"><summary>Will students play tournaments?</summary><p>Students are guided toward internal, school, district, state, national, and FIDE-rated tournaments when ready.</p></details><details class="reveal"><summary>What chess materials are provided?</summary><p>Students may receive worksheets, assignments, practice games, and level-wise study guidance.</p></details><details class="reveal"><summary>Can we attend a demo class?</summary><p>Yes. Use the Book Free Demo form and TKSS will guide you to the right batch.</p></details><details class="reveal"><summary>What happens if a class is missed?</summary><p>Missed-class support depends on batch schedule and availability. Contact TKSS for details.</p></details></div></section>
-
-    <section class="section-shell register-band" id="register"><div class="reveal"><p class="eyebrow">Admissions</p><h2>Start Your Chess Journey with a Free Demo Class</h2><p>Experience a TKSS chess session before enrolling. Share a few details about the student, and we will recommend the most suitable batch based on age, current playing level, and preferred schedule.</p><div class="demo-benefits"><h3>Why Book a Free Demo?</h3><ul><li>Meet our experienced coaches</li><li>Experience our structured teaching methodology</li><li>Get batch recommendations based on the student's level</li><li>Understand the learning roadmap and tournament pathway</li><li>Ask questions before enrolling</li></ul></div></div><div class="hubspot-form-card reveal" aria-live="polite"><h3>Book Free Demo</h3><p>Submit the form and TKSS will contact you with the right batch recommendation.</p><div class="hubspot-form-shell" data-hubspot-form-shell><div class="hs-form-frame" data-region="na2" data-form-id="8f14e083-1b73-4230-8086-e7f977a65618" data-portal-id="246661406"></div><p class="hubspot-loading" data-hubspot-loading>Loading secure enquiry form...</p></div><noscript><p class="hubspot-noscript">Please enable JavaScript to load the TKSS enquiry form.</p></noscript></div></section>
-
-    <section class="contact-section" id="contact"><div class="section-shell contact-grid"><form class="contact-form reveal" action="mailto:tkss.chess@gmail.com" method="post" enctype="text/plain"><p class="eyebrow">Talk to TKSS</p><h2>Send Us a Message</h2><p>Whether you are looking for beginner chess classes, tournament training, online coaching, or school partnership opportunities, we would be happy to help.</p><label>Name<input name="name" placeholder="Your Name" required></label><label>Phone<input name="phone" placeholder="Phone Number" required></label><label>Message<textarea name="message" placeholder="Tell us what you're looking for"></textarea></label><button class="button primary ripple" type="submit">Send Message</button></form><aside class="contact-panel reveal"><div class="map-card"><span>Mogappair, Chennai</span><strong>Visit Our Main Centre</strong><p>Our flagship chess training centre is conveniently located opposite V7 Nolambur Police Station, with additional partner locations across Chennai.</p></div><div class="contact-list"><p><strong>Main Centre Address:</strong><br>C1-19, 2nd Floor, Jai Bharat Apartment<br>6th Main Road, Mogappair Eri Scheme<br>Mogappair, Chennai - 600037<br>Opposite V7 Nolambur Police Station</p><p><strong>Phone:</strong> +91 95662 14256</p><p><strong>WhatsApp:</strong> +91 95662 14256</p><p><strong>Email:</strong> tkss.chess@gmail.com</p><p><strong>Working Hours:</strong> Classes are conducted on weekdays and weekends according to batch schedules.</p></div><div class="hero-actions"><a class="button primary ripple" href="https://wa.me/919566214256">WhatsApp Now</a><a class="button secondary ripple" href="https://maps.app.goo.gl/RX3kyyGhJ66GXQYr8">Open Maps</a></div></aside></div></section>
-  </main>
-  <footer class="footer"><div class="section-shell footer-grid"><div><img src="tkss-logo-clean.png" alt="TKSS Logo" width="72" height="72"><h3>Taanya Kaavya School of Sports</h3><p>A chess-first sports institute dedicated to developing confident thinkers, strategic minds, and future champions through structured chess education. Based at our TKSS Main Centre in Mogappair with partner programs across Chennai and online coaching for students worldwide.</p></div><nav><strong>Quick Links</strong><a href="#home">Home</a><a href="#about">About TKSS</a><a href="#why">Why TKSS</a><a href="#programs">Programs</a><a href="#curriculum">Curriculum Roadmap</a><a href="#school-programs">School Programs</a><a href="#register">Admissions</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a></nav><nav><strong>Programs</strong><a href="#programs">Absolute Beginner</a><a href="#programs">Beginner</a><a href="#programs">Advanced Beginner</a><a href="#programs">Intermediate</a><a href="#programs">Advanced</a><a href="#programs">Online Chess Classes</a><a href="#school-programs">School Programs</a></nav><div><strong>Contact</strong><p>TKSS Main Centre<br>C1-19, 2nd Floor, Jai Bharat Apartment<br>6th Main Road, Mogappair Eri Scheme<br>Chennai - 600037<br>Opposite V7 Nolambur Police Station</p><p>+91 95662 14256</p><p>tkss.chess@gmail.com</p></div></div><div class="footer-bottom"><span>© 2026 Taanya Kaavya School of Sports (TKSS). All Rights Reserved.</span><span>Privacy Policy · Terms & Conditions</span></div></footer>
-  <a class="whatsapp-float" href="https://wa.me/919566214256" aria-label="Chat with TKSS on WhatsApp"><svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.04 3.2c-7.06 0-12.8 5.69-12.8 12.69 0 2.24.59 4.42 1.72 6.35L3.2 28.8l6.72-1.75a12.91 12.91 0 0 0 6.12 1.55c7.06 0 12.8-5.69 12.8-12.69S23.1 3.2 16.04 3.2Zm0 23.24c-1.9 0-3.76-.51-5.38-1.48l-.39-.23-3.99 1.04 1.07-3.86-.25-.4a10.38 10.38 0 0 1-1.7-5.62c0-5.81 4.77-10.54 10.64-10.54s10.64 4.73 10.64 10.54-4.77 10.55-10.64 10.55Zm5.84-7.9c-.32-.16-1.9-.93-2.2-1.04-.3-.11-.51-.16-.73.16-.21.32-.84 1.04-1.03 1.25-.19.21-.38.24-.7.08-.32-.16-1.35-.49-2.57-1.57-.95-.84-1.59-1.88-1.78-2.2-.19-.32-.02-.49.14-.65.15-.15.32-.38.49-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.57-.08-.16-.73-1.74-1-2.38-.26-.62-.53-.54-.73-.55h-.62c-.21 0-.57.08-.86.4-.3.32-1.13 1.1-1.13 2.68s1.16 3.11 1.32 3.32c.16.21 2.29 3.46 5.55 4.85.78.33 1.38.53 1.85.68.78.25 1.49.21 2.05.13.63-.09 1.9-.77 2.17-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.62-.37Z"/></svg><strong>WhatsApp</strong></a>
-  <div class="lightbox" aria-hidden="true"><button aria-label="Close gallery preview">×</button><div><span></span><p></p></div></div>
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
