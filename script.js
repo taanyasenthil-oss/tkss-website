@@ -1,42 +1,10 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".menu");
-const trialForm = document.querySelector(".trial-form");
+const toggle=document.querySelector('.menu-toggle');const navLinks=document.querySelector('#navLinks');const nav=document.querySelector('.nav');toggle?.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});navLinks?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');toggle?.setAttribute('aria-expanded','false');}));window.addEventListener('scroll',()=>nav?.classList.toggle('scrolled',window.scrollY>12));const revealObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}})},{threshold:.14});document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));const counterObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(!entry.isIntersecting)return;const el=entry.target;const target=Number(el.dataset.counter||0);let start=0;const duration=1200;const t0=performance.now();function tick(now){const p=Math.min((now-t0)/duration,1);el.textContent=Math.floor(target*(1-Math.pow(1-p,3))).toLocaleString('en-IN');if(p<1)requestAnimationFrame(tick);}requestAnimationFrame(tick);counterObserver.unobserve(el);});},{threshold:.5});document.querySelectorAll('[data-counter]').forEach(el=>counterObserver.observe(el));const testimonials=[{text:'TKSS gave my child a disciplined and friendly chess environment. The coaching is structured, and tournament confidence improved steadily.',name:'Anitha R.',avatar:'A'},{text:'The school chess program is professional and easy for children to follow. Students enjoy the sessions and learn with focus.',name:'School Coordinator',avatar:'S'},{text:'We liked the balance of patience, discipline, and competitive preparation. TKSS helped our child take chess seriously.',name:'Karthik M.',avatar:'K'}];let slide=0;const textEl=document.querySelector('#testimonialText');const nameEl=document.querySelector('#testimonialName');const avatarEl=document.querySelector('#testimonialAvatar');const dots=[...document.querySelectorAll('.dots button')];function showSlide(i){slide=i;const item=testimonials[i];if(textEl)textEl.textContent=item.text;if(nameEl)nameEl.textContent=item.name;if(avatarEl)avatarEl.textContent=item.avatar;dots.forEach((d,index)=>d.classList.toggle('active',index===i));}dots.forEach(dot=>dot.addEventListener('click',()=>showSlide(Number(dot.dataset.slide))));setInterval(()=>showSlide((slide+1)%testimonials.length),5000);const lightbox=document.querySelector('.lightbox');const lightIcon=lightbox?.querySelector('span');const lightTitle=lightbox?.querySelector('p');document.querySelectorAll('.gallery-item').forEach(item=>item.addEventListener('click',()=>{if(!lightbox)return;lightIcon.textContent=item.querySelector('span')?.textContent||'♟';lightTitle.textContent=item.dataset.title||'TKSS Gallery';lightbox.classList.add('open');lightbox.setAttribute('aria-hidden','false');}));lightbox?.querySelector('button')?.addEventListener('click',()=>{lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');});document.addEventListener('keydown',event=>{if(event.key==='Escape'&&lightbox?.classList.contains('open')){lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');}});if(window.lucide){window.lucide.createIcons();}
+const progress=document.querySelector('.scroll-progress');function updateProgress(){if(!progress)return;const max=document.documentElement.scrollHeight-window.innerHeight;const pct=max>0?(window.scrollY/max)*100:0;progress.style.width=pct+'%';}window.addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+document.querySelectorAll('.gallery-filters button').forEach(btn=>btn.addEventListener('click',()=>{const filter=btn.dataset.filter;document.querySelectorAll('.gallery-filters button').forEach(b=>b.classList.toggle('active',b===btn));document.querySelectorAll('.gallery-item').forEach(item=>{item.classList.toggle('is-hidden',filter!=='all'&&item.dataset.category!==filter);});}));
+document.querySelectorAll('.ripple').forEach(el=>el.addEventListener('click',event=>{const rect=el.getBoundingClientRect();const dot=document.createElement('span');const size=Math.max(rect.width,rect.height);dot.className='ripple-dot';dot.style.width=dot.style.height=size+'px';dot.style.left=event.clientX-rect.left-size/2+'px';dot.style.top=event.clientY-rect.top-size/2+'px';el.appendChild(dot);setTimeout(()=>dot.remove(),600);}));
 
-menuToggle?.addEventListener("click", () => {
-  const open = menu.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", String(open));
-});
-
-menu?.addEventListener("click", (event) => {
-  if (event.target.tagName === "A") {
-    menu.classList.remove("open");
-    menuToggle?.setAttribute("aria-expanded", "false");
-  }
-});
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) entry.target.classList.add("visible");
-    });
-  },
-  { threshold: 0.14 }
-);
-
-document.querySelectorAll(".activity-card, .journey-line article, .parents-grid article").forEach((item) => {
-  observer.observe(item);
-});
-
-trialForm?.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const data = new FormData(trialForm);
-  const message = [
-    "Hello Amma's Ark, I would like to book a free demo.",
-    `Parent: ${data.get("name") || ""}`,
-    `Phone: ${data.get("phone") || ""}`,
-    `Child age: ${data.get("age") || ""}`,
-    `Activity: ${data.get("activity") || ""}`
-  ].join("\n");
-
-  window.open(`https://wa.me/919003433304?text=${encodeURIComponent(message)}`, "_blank", "noreferrer");
-});
+function loadHubSpotForm(){if(document.querySelector('script[data-hubspot-forms]'))return;const script=document.createElement('script');script.src='https://js-na2.hsforms.net/forms/embed/246661406.js';script.defer=true;script.dataset.hubspotForms='true';script.onload=()=>{document.querySelector('[data-hubspot-loading]')?.remove();};script.onerror=()=>{const loading=document.querySelector('[data-hubspot-loading]');if(loading)loading.textContent='Unable to load the enquiry form. Please contact TKSS on WhatsApp.';};document.body.appendChild(script);}const hubspotShell=document.querySelector('[data-hubspot-form-shell]');if(hubspotShell){if('IntersectionObserver'in window){const hubspotObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){loadHubSpotForm();hubspotObserver.disconnect();}});},{rootMargin:'260px 0px'});hubspotObserver.observe(hubspotShell);}else{window.addEventListener('load',loadHubSpotForm,{once:true});}}
+const caissaPicture=(name,alt,className='')=>`<picture class="${className}"><source srcset="assets/caissa/${name}.webp" type="image/webp"><img src="assets/caissa/${name}.png" alt="${alt}" loading="lazy" width="1024" height="1536"></picture>`;
+const achievementHeading=document.querySelector('#achievements .section-heading');if(achievementHeading){achievementHeading.classList.add('tournament-heading');achievementHeading.insertAdjacentHTML('beforeend',`<div class="tournament-mascots" aria-hidden="true">${caissaPicture('caissa-competing','')}${caissaPicture('caissa-winning','')}</div>`);}
+const testimonialHeading=document.querySelector('.testimonials .section-heading');if(testimonialHeading){testimonialHeading.classList.add('testimonial-heading');testimonialHeading.insertAdjacentHTML('beforeend',caissaPicture('caissa-thinking','Caissa thinking strategically','testimonial-mascot'));}
+const footerBrand=document.querySelector('.footer-grid > div:first-child');const footerLogo=footerBrand?.querySelector('img');if(footerBrand&&footerLogo){const wrap=document.createElement('div');wrap.className='footer-brand';footerLogo.before(wrap);wrap.append(footerLogo);wrap.insertAdjacentHTML('beforeend',caissaPicture('caissa-official','Caissa, TKSS chess mascot','footer-mascot'));}

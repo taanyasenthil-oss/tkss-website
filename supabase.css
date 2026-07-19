@@ -1,0 +1,2 @@
+/* Phase 1: safe loading and error state for the dynamic branches section. */
+.branch-status{grid-column:1/-1;margin:0;padding:28px;border:1px solid var(--border-color);border-radius:var(--radius);background:var(--surface-color);color:var(--text-color);text-align:center}
