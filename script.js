@@ -4,7 +4,15 @@ document.querySelectorAll('.gallery-filters button').forEach(btn=>btn.addEventLi
 document.querySelectorAll('.ripple').forEach(el=>el.addEventListener('click',event=>{const rect=el.getBoundingClientRect();const dot=document.createElement('span');const size=Math.max(rect.width,rect.height);dot.className='ripple-dot';dot.style.width=dot.style.height=size+'px';dot.style.left=event.clientX-rect.left-size/2+'px';dot.style.top=event.clientY-rect.top-size/2+'px';el.appendChild(dot);setTimeout(()=>dot.remove(),600);}));
 
 function loadHubSpotForm(){if(document.querySelector('script[data-hubspot-forms]'))return;const script=document.createElement('script');script.src='https://js-na2.hsforms.net/forms/embed/246661406.js';script.defer=true;script.dataset.hubspotForms='true';script.onload=()=>{document.querySelector('[data-hubspot-loading]')?.remove();};script.onerror=()=>{const loading=document.querySelector('[data-hubspot-loading]');if(loading)loading.textContent='Unable to load the enquiry form. Please contact TKSS on WhatsApp.';};document.body.appendChild(script);}const hubspotShell=document.querySelector('[data-hubspot-form-shell]');if(hubspotShell){if('IntersectionObserver'in window){const hubspotObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){loadHubSpotForm();hubspotObserver.disconnect();}});},{rootMargin:'260px 0px'});hubspotObserver.observe(hubspotShell);}else{window.addEventListener('load',loadHubSpotForm,{once:true});}}
-const caissaPicture=(name,alt,className='')=>`<picture class="${className}"><source srcset="assets/caissa/${name}.webp" type="image/webp"><img src="assets/caissa/${name}.png" alt="${alt}" loading="lazy" width="1024" height="1536"></picture>`;
+const caissaPicture=(name,alt,className='')=>`
+<picture class="${className}">
+    <source srcset="${name}.webp" type="image/webp">
+    <img src="${name}.png" 
+         alt="${alt}" 
+         loading="lazy"
+         width="1024"
+         height="1536">
+</picture>`;
 const achievementHeading=document.querySelector('#achievements .section-heading');if(achievementHeading){achievementHeading.classList.add('tournament-heading');achievementHeading.insertAdjacentHTML('beforeend',`<div class="tournament-mascots" aria-hidden="true">${caissaPicture('caissa-competing','')}${caissaPicture('caissa-winning','')}</div>`);}
 const testimonialHeading=document.querySelector('.testimonials .section-heading');if(testimonialHeading){testimonialHeading.classList.add('testimonial-heading');testimonialHeading.insertAdjacentHTML('beforeend',caissaPicture('caissa-thinking','Caissa thinking strategically','testimonial-mascot'));}
-const footerBrand=document.querySelector('.footer-grid > div:first-child');const footerLogo=footerBrand?.querySelector('img');if(footerBrand&&footerLogo){const wrap=document.createElement('div');wrap.className='footer-brand';footerLogo.before(wrap);wrap.append(footerLogo);wrap.insertAdjacentHTML('beforeend',<img src="caissa-official.webp"alt="Caissa, TKSS Chess Mascot" class="footer-mascot">);}
+const footerBrand=document.querySelector('.footer-grid > div:first-child');const footerLogo=footerBrand?.querySelector('img');if(footerBrand&&footerLogo){const wrap=document.createElement('div');wrap.className='footer-brand';footerLogo.before(wrap);wrap.append(footerLogo);wrap.insertAdjacentHTML('beforeend',caissaPicture('caissa-official','Caissa, TKSS chess mascot','footer-mascot'));}
